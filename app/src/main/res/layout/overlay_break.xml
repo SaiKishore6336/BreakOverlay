@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_overlay_gradient">
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="-120dp"
+        android:layout_marginEnd="-100dp"
+        android:background="@drawable/bg_overlay_glow" />
+
+    <View
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="-100dp"
+        android:layout_marginBottom="-80dp"
+        android:background="@drawable/bg_overlay_glow_soft" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingStart="28dp"
+            android:paddingTop="52dp"
+            android:paddingEnd="28dp"
+            android:paddingBottom="34dp">
+
+            <FrameLayout
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:background="@drawable/bg_overlay_icon">
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_eye_leaf"
+                    app:tint="@color/overlay_ink" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/overlayEyebrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:letterSpacing="0.16"
+                android:text="@string/overlay_eyebrow"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.BreakOverlay.OverlayEyebrow"
+                android:textColor="@color/overlay_accent" />
+
+            <TextView
+                android:id="@+id/overlayTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:letterSpacing="0.02"
+                android:minHeight="150dp"
+                android:textAppearance="@style/TextAppearance.BreakOverlay.OverlayTitle"
+                android:textColor="@color/overlay_ink"
+                tools:text="TAKE A BREAK" />
+
+            <TextView
+                android:id="@+id/overlayCountdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/overlay_countdown_initial"
+                android:textAppearance="@style/TextAppearance.BreakOverlay.OverlayCountdown"
+                android:textColor="@color/overlay_ink" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/overlayProgress"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="20dp"
+                android:max="8000"
+                android:progress="8000"
+                app:indicatorColor="@color/overlay_accent"
+                app:trackColor="@color/overlay_track"
+                app:trackCornerRadius="8dp"
+                app:trackThickness="10dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:cardBackgroundColor="@color/overlay_card"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/overlay_card_stroke"
+                app:strokeWidth="1dp">
+
+                <TextView
+                    android:id="@+id/overlayGuidance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingStart="22dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="22dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/overlay_guidance_distance"
+                    android:textAppearance="@style/TextAppearance.BreakOverlay.OverlayGuidance"
+                    android:textColor="@color/overlay_ink" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/overlaySnoozeButton"
+                style="@style/Widget.BreakOverlay.Button.Overlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:enabled="false"
+                android:text="@string/overlay_snooze_locked_initial"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:lineSpacingExtra="2dp"
+                android:text="@string/overlay_disclaimer"
+                android:textAppearance="@style/TextAppearance.BreakOverlay.OverlayFootnote"
+                android:textColor="@color/overlay_muted" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

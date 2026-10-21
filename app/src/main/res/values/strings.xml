@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Break Overlay</string>
+    <string name="logo_content_description">Break Overlay eye and leaf logo</string>
+    <string name="dashboard_tagline">Rest your eyes. Keep your focus.</string>
+    <string name="dashboard_hero_title">A calmer way to use your phone.</string>
+    <string name="dashboard_hero_subtitle">Gentle eye breaks and honest daily screen-time awareness — without forcing other apps closed.</string>
+    <string name="footer_note">Timing depends on Android battery management and manufacturer restrictions. Daily usage is reconstructed from Android UsageStats and may differ slightly from Digital Wellbeing. Break Overlay never closes other apps.</string>
+    <string name="footer_version_and_note">Break Overlay v%1$s · Local-only monitoring\n\n%2$s</string>
+
+    <string name="status_off">Off</string>
+    <string name="status_missing">Missing</string>
+    <string name="status_granted">Granted</string>
+    <string name="status_optimized">Optimized</string>
+    <string name="status_allowed">Allowed</string>
+    <string name="status_channel_off">Channel off</string>
+    <string name="status_active">Active</string>
+    <string name="status_needs_attention">Needs attention</string>
+
+    <string name="monitoring_title">Monitoring</string>
+    <string name="monitoring_subtitle">Continuous foreground awareness</string>
+    <string name="monitoring_switch_description">Enable continuous eye-break monitoring</string>
+    <string name="monitoring_status_off">Monitoring is off</string>
+    <string name="monitoring_detail_off">Grant overlay and usage access, then turn monitoring on for gentle, scheduled eye breaks.</string>
+    <string name="monitoring_status_active">Monitoring active</string>
+    <string name="monitoring_status_partial">Working with limited permissions</string>
+    <string name="monitoring_status_stopped">Monitoring is not running</string>
+    <string name="monitoring_detail_active">The foreground service watches eligible apps and keeps a low-priority status notification.</string>
+    <string name="monitoring_detail_partial">The service is running, but a required permission is missing. Fix it below.</string>
+    <string name="monitoring_detail_stopped">Monitoring is enabled in settings, but the service is not running. It will be restarted when possible.</string>
+    <string name="monitoring_detail_screen_off">Screen off — the break clock is paused.</string>
+
+    <string name="label_active_app">ACTIVE MONITORED APP</string>
+    <string name="label_current_session">CONTINUOUS SESSION</string>
+    <string name="label_next_break">NEXT EYE BREAK</string>
+    <string name="value_none">None</string>
+    <string name="value_dash">—</string>
+    <string name="value_waiting_for_app">When a monitored app is active</string>
+    <string name="value_paused">Paused until monitored use resumes</string>
+    <string name="value_break_in_progress">Eye break in progress</string>
+    <string name="value_screen_off">Screen is off</string>
+    <string name="next_break_value">in %1$s · around %2$s</string>
+    <string name="next_break_remaining_only">in %1$s</string>
+    <string name="next_break_due">Due now</string>
+
+    <string name="test_overlay_now">Test overlay now</string>
+    <string name="overlay_test_permission_needed">Allow “Display over other apps” before previewing the break overlay.</string>
+    <string name="overlay_test_already_visible">A break overlay is already visible. Finish or snooze it first.</string>
+    <string name="overlay_test_failed">The overlay could not be shown. Check the overlay permission and try again.</string>
+
+    <string name="warning_usage_access_missing">Usage access is missing. Break scheduling and daily limits are paused.</string>
+    <string name="warning_overlay_missing">Display over other apps is missing. Eye-break overlays cannot appear.</string>
+    <string name="warning_notifications_disabled">Notifications are off. Screen-limit alerts may not be delivered.</string>
+    <string name="warning_permissions_missing">Some required permissions are missing.</string>
+    <string name="warning_selected_scope_empty">Selected Apps Only is active, but no apps are selected. The break clock will stay paused.</string>
+    <string name="warning_overlay_preview_active">Overlay preview is open. The real break timer is paused and will not be affected.</string>
+    <string name="warning_service_stopped">Monitoring is enabled but the foreground service is not running. It will be restarted when possible, or turn monitoring off and on.</string>
+
+    <string name="break_settings_title">Break rhythm</string>
+    <string name="break_settings_subtitle">A soft interruption after a stretch of focused screen use.</string>
+    <string name="break_interval_hint">Interval (min)</string>
+    <string name="snooze_hint">Snooze (min)</string>
+    <string name="break_settings_ranges">Use 5–240 minutes for breaks and 1–60 for snooze. Common intervals are 20, 30, 45 or 60.</string>
+    <string name="sound_toggle_title">Chime on break</string>
+    <string name="sound_toggle_subtitle">Plays the system notification sound when the overlay appears.</string>
+    <string name="monitor_scope_title">Count breaks during</string>
+    <string name="monitor_scope_all">All apps</string>
+    <string name="monitor_scope_selected">Selected apps only</string>
+    <string name="scope_all_description">Every eligible foreground app counts toward a break. Launchers, system UI and this dashboard never count.</string>
+    <plurals name="scope_selected_description">
+        <item quantity="one">Only the %1$d selected app counts toward a break. Other apps pause the break clock.</item>
+        <item quantity="other">Only the %1$d selected apps count toward a break. Other apps pause the break clock.</item>
+    </plurals>
+    <string name="scope_selected_empty_description">No apps are selected. Open the app list below to choose the apps that should count.</string>
+    <string name="apply_break_settings">Apply break settings</string>
+    <string name="invalid_break_interval">Enter an interval from 5 to 240 minutes.</string>
+    <string name="invalid_snooze">Enter a snooze duration from 1 to 60 minutes.</string>
+    <string name="break_settings_saved">Break settings updated.</string>
+    <string name="break_settings_save_failed">Break settings could not be saved.</string>
+
+    <string name="permissions_title">Permissions &amp; access</string>
+    <string name="permissions_subtitle">Checked against the real system state every time you return to the app.</string>
+    <string name="permission_overlay_title">Display over other apps</string>
+    <string name="permission_overlay_description">Shows the eye-break screen above the current app.</string>
+    <string name="permission_usage_title">Usage access</string>
+    <string name="permission_usage_description">Reads Android usage events for break timing and daily limits.</string>
+    <string name="permission_battery_title">Battery optimization</string>
+    <string name="permission_battery_description">Optional. Unrestricted battery use improves reliability on many devices.</string>
+    <string name="permission_battery_optimized">Optimized (optional)</string>
+    <string name="permission_battery_unrestricted">Unrestricted</string>
+    <string name="permission_notifications_title">Notifications</string>
+    <string name="permission_notifications_description">Shows the monitoring status and screen-limit alerts.</string>
+
+    <string name="action_grant">Grant</string>
+    <string name="action_open">Open</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_allow">Allow</string>
+    <string name="action_manage">Manage</string>
+    <string name="action_open_settings">Open settings</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_remove_limit">Remove limit</string>
+    <string name="action_ok">OK</string>
+    <string name="open_settings_failed">The system settings screen could not be opened on this device.</string>
+
+    <string name="apps_title">Apps &amp; daily limits</string>
+    <string name="apps_subtitle">Select apps for break monitoring, then tap an app to set an optional daily limit. Saving a limit also selects the app.</string>
+    <string name="search_apps_hint">Search apps by name</string>
+    <string name="select_all_apps">Select all</string>
+    <string name="clear_selection">Clear</string>
+    <string name="apps_empty">No apps match your search.</string>
+    <string name="apps_none_found">No launchable apps were found.</string>
+    <string name="apps_loading">Loading launchable apps…</string>
+    <string name="apps_selection_cleared">App selection cleared.</string>
+    <string name="apps_all_selected">All launchable apps selected.</string>
+    <string name="app_selection_count_zero">No apps selected</string>
+    <plurals name="selected_apps_count">
+        <item quantity="one">%d app selected</item>
+        <item quantity="other">%d apps selected</item>
+    </plurals>
+    <string name="app_usage_measured">%1$s today</string>
+    <string name="app_usage_estimated">~%1$s today · estimated</string>
+    <string name="app_usage_unavailable">Usage access is needed for today’s usage</string>
+    <string name="app_usage_loading">Loading today’s usage…</string>
+    <string name="app_usage_error">Usage data is unavailable right now</string>
+    <string name="app_usage_none">No usage recorded today</string>
+    <string name="app_usage_today_caption">Today: %1$s</string>
+    <string name="app_usage_today_estimated_caption">Today: ~%1$s (estimated)</string>
+    <string name="app_limit_badge">Limit %1$dm</string>
+    <string name="app_limit_badge_reached">Limit reached</string>
+    <string name="app_limit_badge_paused">Limit paused</string>
+    <string name="app_select_description">Select %1$s for break monitoring</string>
+    <string name="app_open_limit_description">Open daily limit settings for %1$s</string>
+    <string name="usage_estimate_note">Today’s usage is reconstructed from Android UsageStats. A leading ~ marks an estimate from incomplete or ongoing usage events. It can differ slightly from Digital Wellbeing.</string>
+    <string name="usage_estimate_note_permission">Usage access is off, so app usage cannot be shown. Usage access can be granted in the permissions section above.</string>
+    <string name="usage_unavailable_note">Today’s Android usage data could not be read right now. Break timing and saved limits are unaffected.</string>
+
+    <string name="dialog_limit_title">Daily app limit</string>
+    <string name="dialog_limit_enabled">Enable daily limit</string>
+    <string name="dialog_limit_minutes_hint">Daily limit (minutes)</string>
+    <string name="dialog_limit_minutes_helper">1–1440 minutes</string>
+    <string name="dialog_limit_note">When the limit is reached, Break Overlay sends one gentle notification for that app and day. Android does not let this app forcibly close another app.</string>
+    <string name="dialog_limit_invalid">Enter a whole number from 1 to 1440.</string>
+    <string name="dialog_today_usage_unavailable">Today’s usage is unavailable without usage access.</string>
+    <string name="daily_limit_saved">Daily limit saved.</string>
+    <string name="daily_limit_removed">Daily limit removed.</string>
+    <string name="daily_limit_disabled">Daily limit paused for this app.</string>
+    <string name="daily_limit_save_failed">The daily limit could not be saved.</string>
+    <string name="app_selection_save_failed">App selection could not be saved.</string>
+
+    <string name="permission_needed_title">Permission needed</string>
+    <string name="monitoring_requires_permissions">Monitoring needs %1$s. Grant access, then switch monitoring on again.</string>
+    <string name="permission_label_overlay">display over other apps</string>
+    <string name="permission_label_usage">usage access</string>
+    <string name="permission_label_both">display over other apps and usage access</string>
+    <string name="select_apps_first_title">Select an app first</string>
+    <string name="select_apps_first_message">Selected Apps Only is active but no apps are selected. Choose at least one app below, or switch to All Apps.</string>
+    <string name="start_failed_title">Could not start monitoring</string>
+    <string name="monitoring_start_failed_message">Android did not start the monitoring foreground service. Keep the app open and try again. If this repeats, check battery restrictions.</string>
+    <string name="monitoring_enabled_message">Eye-break monitoring is on.</string>
+    <string name="monitoring_disabled_message">Eye-break monitoring is off.</string>
+    <string name="monitoring_toggle_failed">Monitoring settings could not be updated.</string>
+    <string name="notifications_denied_message">Notifications are still off. Monitoring can run, but alerts and the status notification may be hidden by Android.</string>
+
+    <string name="channel_background_name">Monitoring status</string>
+    <string name="channel_background_description">Ongoing, low-priority status while Break Overlay is monitoring.</string>
+    <string name="channel_gentle_name">Gentle alerts</string>
+    <string name="channel_gentle_description">Time-sensitive screen-limit alerts and break reminders.</string>
+    <string name="notification_action_dashboard">Dashboard</string>
+    <string name="notification_limit_title">⏰ Screen Limit Reached: %1$s</string>
+    <string name="notification_limit_text">Used %1$d min today / %2$d min limit</string>
+    <string name="notification_estimated_suffix">(Android usage estimate)</string>
+    <string name="notification_overlay_title">Break due — allow display over apps</string>
+    <string name="notification_overlay_text">Your eye break is due, but the overlay cannot appear without Display over other apps permission. Open Break Overlay to fix it.</string>
+
+    <string name="service_notification_title">Break Overlay is on</string>
+    <string name="service_notification_starting">Starting continuous eye-break monitoring…</string>
+    <string name="service_notification_stopped">Monitoring is off</string>
+    <string name="service_notification_permission">Permission needed — open the dashboard</string>
+    <string name="service_notification_permission_title">Break Overlay needs permission</string>
+    <string name="service_notification_next_break">Next eye break in %1$s</string>
+    <string name="service_notification_paused">Break timer paused — return to a monitored app</string>
+    <string name="service_notification_waiting">Waiting for a monitored app</string>
+    <string name="service_notification_overlay_title">Take a break</string>
+    <string name="service_notification_overlay_active">Your eye-rest countdown is on screen</string>
+    <string name="service_error_generic">Monitoring hit an unexpected error and will retry.</string>
+    <string name="service_error_overlay_failed">The break overlay could not be displayed. It will be retried.</string>
+    <string name="service_error_overlay_permission">Overlay permission is missing, so a due break could not be shown.</string>
+
+    <string name="overlay_eyebrow">MINDFUL MOMENT</string>
+    <string name="overlay_test_eyebrow">OVERLAY PREVIEW</string>
+    <string name="overlay_title_stage_1">TAKE</string>
+    <string name="overlay_title_stage_2">TAKE A</string>
+    <string name="overlay_title_stage_3">TAKE A BREAK</string>
+    <string name="overlay_title_full">Take a break</string>
+    <string name="overlay_countdown_initial">Mandatory Eye Rest: 8s remaining</string>
+    <string name="overlay_countdown">Mandatory Eye Rest: %1$ds remaining</string>
+    <string name="overlay_countdown_complete">Eye rest complete</string>
+    <string name="overlay_guidance_distance">🌿 Look 20 feet away into the distance · Inhale slowly</string>
+    <string name="overlay_guidance_blink">💧 Blink gently to refresh your eyes · Exhale slowly</string>
+    <string name="overlay_guidance_complete">Your eyes have had a reset. Tap snooze only if you need a little more time.</string>
+    <string name="overlay_snooze_locked_initial">🔒 Snooze unlocks in 8s</string>
+    <string name="overlay_snooze_locked">🔒 Snooze unlocks in %1$ds</string>
+    <string name="overlay_snooze_button">Snooze %1$d min</string>
+    <string name="overlay_disclaimer">This is a gentle app-level reminder, not medical advice or a guaranteed rest period. Android may delay background timing under battery restrictions and the overlay cannot cover secure system screens.</string>
+</resources>

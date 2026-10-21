@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Monitoring state and permission-dependent schedules are intentionally not backed up.
+    Restoring a "monitoring enabled" preference to a new device without its permission
+    state would be misleading.
+-->
+<data-extraction-rules>
+    <cloud-backup disableIfNoEncryptionCapabilities="true">
+        <exclude domain="file" path="datastore/break_overlay_preferences.preferences_pb" />
+        <exclude domain="root" path="." />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="file" path="datastore/break_overlay_preferences.preferences_pb" />
+        <exclude domain="root" path="." />
+    </device-transfer>
+</data-extraction-rules>

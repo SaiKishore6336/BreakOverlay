@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.BreakOverlay" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/on_brand_primary</item>
+        <item name="colorPrimaryContainer">@color/brand_container</item>
+        <item name="colorOnPrimaryContainer">@color/on_brand_container</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorOnSecondary">@color/on_accent</item>
+        <item name="colorSecondaryContainer">@color/accent_container</item>
+        <item name="colorOnSecondaryContainer">@color/on_accent_container</item>
+        <item name="android:colorBackground">@color/app_background</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorOutline">@color/outline</item>
+        <item name="colorOutlineVariant">@color/divider</item>
+        <item name="colorError">@color/error</item>
+        <item name="android:statusBarColor">@color/app_background</item>
+        <item name="android:navigationBarColor">@color/app_background</item>
+        <item name="android:windowLightStatusBar">@bool/light_system_bars</item>
+        <item name="android:windowBackground">@color/app_background</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.BreakOverlay.Dialog</item>
+    </style>
+
+    <style name="ThemeOverlay.BreakOverlay.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.BreakOverlay.Dialog</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.BreakOverlay.Dialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <style name="Theme.BreakOverlay.Overlay" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/overlay_accent</item>
+        <item name="colorOnPrimary">@color/overlay_ink</item>
+        <item name="colorPrimaryContainer">@color/overlay_card</item>
+        <item name="colorOnPrimaryContainer">@color/overlay_ink</item>
+        <item name="colorSurface">@color/overlay_card</item>
+        <item name="colorOnSurface">@color/overlay_ink</item>
+        <item name="colorSurfaceVariant">@color/overlay_card</item>
+        <item name="colorOnSurfaceVariant">@color/overlay_muted</item>
+        <item name="colorOutline">@color/overlay_card_stroke</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackground">@color/overlay_bg_top</item>
+        <item name="android:statusBarColor">@color/overlay_bg_top</item>
+        <item name="android:navigationBarColor">@color/overlay_bg_bottom</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

@@ -1,0 +1,28 @@
+# Android / Gradle
+.gradle/
+.kotlin/
+build/
+/app/build/
+/local.properties
+/captures/
+.externalNativeBuild/
+.cxx/
+*.iml
+.idea/
+.DS_Store
+
+# Build products
+*.apk
+*.aab
+*.idsig
+/release/
+/dist/
+
+# Local signing material. Never commit the real keystore or its passwords.
+/keystore.properties
+/keystore/
+/signing/
+*.jks
+*.keystore
+*.p12
+*.pfx
