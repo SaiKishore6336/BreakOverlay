@@ -1,0 +1,68 @@
+Break Overlay
+Copyright (c) 2026 Sai Kishore
+
+Break Overlay is licensed under the MIT License. See LICENSE for the full
+license text.
+
+Bundled runtime components
+--------------------------
+
+The release APK bundles the following third-party runtime components. All are
+licensed under the Apache License, Version 2.0:
+
+- AndroidX libraries: Core, Core KTX, AppCompat, Activity, Fragment, Lifecycle,
+  DataStore, RecyclerView, ConstraintLayout, Annotation, Collection, CardView,
+  CoordinatorLayout, CursorAdapter, CustomView, DocumentFile, DrawerLayout,
+  DynamicAnimation, Emoji2, Interpolator, Legacy Support Core Utils, Loader,
+  LocalBroadcastManager, Print, ProfileInstaller, Resource Inspection,
+  SavedState, Startup, Tracing, Transition, VectorDrawable,
+  VersionedParcelable, ViewPager, ViewPager2, Arch Core, Concurrent Futures,
+  Data Binding ViewBinding, and their transitive modules.
+  Project: https://developer.android.com/jetpack/androidx
+  License: Apache-2.0
+
+- Material Components for Android
+  Project: https://github.com/material-components/material-components-android
+  License: Apache-2.0
+
+- Kotlin standard library, Kotlin Android extensions runtime, and Kotlin
+  Parcelize runtime
+  Project: https://kotlinlang.org/
+  License: Apache-2.0
+
+- kotlinx.coroutines
+  Project: https://github.com/Kotlin/kotlinx.coroutines
+  License: Apache-2.0
+
+- Okio
+  Project: https://github.com/square/okio
+  License: Apache-2.0
+
+- JetBrains Java annotations
+  Project: https://github.com/JetBrains/java-annotations
+  License: Apache-2.0
+
+- Guava ListenableFuture
+  Project: https://github.com/google/guava
+  License: Apache-2.0
+
+- Error Prone annotations
+  Project: https://github.com/google/error-prone
+  License: Apache-2.0
+
+Build tooling
+-------------
+
+The repository includes the Gradle wrapper. It is build tooling and is not
+bundled in the APK.
+
+- Gradle wrapper
+  Project: https://gradle.org/
+  License: Apache-2.0
+
+Full license text
+-----------------
+
+The complete Apache License, Version 2.0 text is available at
+licenses/Apache-2.0.txt. A copy of this NOTICE and the license text is also
+included inside the APK at assets/licenses/.

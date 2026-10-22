@@ -3,13 +3,21 @@
 .kotlin/
 build/
 /app/build/
+/app/release/
 /local.properties
 /captures/
 .externalNativeBuild/
 .cxx/
 *.iml
 .idea/
+.vscode/
 .DS_Store
+Thumbs.db
+
+# Environment and credentials
+.env
+.env.*
+*.log
 
 # Build products
 *.apk
@@ -17,6 +25,8 @@ build/
 *.idsig
 /release/
 /dist/
+/out/
+/coverage/
 
 # Local signing material. Never commit the real keystore or its passwords.
 /keystore.properties
